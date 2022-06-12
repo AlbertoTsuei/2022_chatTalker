@@ -1,0 +1,356 @@
+.method{
+    &-wrap {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
+        background-size: 885px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 100vh;
+        position: relative;
+        @include pad{
+            background-image: none;        
+        }
+    }
+    &-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 16px;
+        @include pad{
+            padding: 0;        
+        }
+    }
+}
+
+.method-nav {
+    align-items: center;
+    justify-content: space-between;
+    &-wrap {
+        position: relative;
+    }
+    @include pad{
+        border-bottom: 2px solid #FFD153;
+        padding: 0 16px;       
+    }
+}
+
+.method-ball-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    background-position: top -1350px left -80px;
+    z-index: -1;
+    opacity: 0.3;
+    @include pad{
+        top: 74px;
+        height: calc(100vh - 100px);
+        background-position: top -1000px left -10px;       
+    }
+}
+.method-logo {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    width: 250px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @include pad{
+        height: 24px;        
+    }
+    
+}
+
+.method-banner {
+    padding-top: 92px;
+    padding-bottom: 270px;
+    height: calc(100vh - 74px);
+    @include pad{
+        padding: 48px 16px 360px 16px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top right -10px;       
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        @include pad{
+            font-size: 32px;       
+        }
+    }
+}
+
+.method-main {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    @include pad{
+        padding: 0 16px;
+        margin-bottom: 60px;       
+    }
+    &-wrap{
+        position: relative;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 48px;
+        @include pad{
+            font-size: 28px;
+            margin-bottom: 24px;
+            padding: 0 16px;        
+        }
+    }
+    &-people {
+        margin: 0 auto;
+        ul {
+            margin: 0 90px;
+            justify-content: space-between;
+            margin-bottom: 54px;
+            @include pc{
+                margin: 0 0 24px 0;
+                overflow-x: auto;        
+            }
+        }
+    }
+}
+
+
+.method-ball-3 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 94px;
+    height: 360px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat;
+    background-size: 360px;
+    background-position: right;
+    z-index: -1;
+    @include pad{
+        top: 600px;
+        width: 150px;        
+    }
+}
+
+
+.people-btn {
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    @include pad{
+        width: 90px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0 3px;        
+    }
+}
+
+.selected{
+    color: #ffffff;
+    background: $color-primary;
+}
+
+.method{
+    &-list {
+        max-width: 900px;
+        margin-right: -20px;
+        justify-content: space-between;
+        @include pc{
+            flex-direction: column;
+            margin-right: 0;        
+        }
+    }
+    &-card {
+        width: calc(50% - 10px);
+        text-align: center;
+        padding: 10px 20px 32px 20px;
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px $color-gray;
+        margin-right: 20px;
+        background: #ffffff;
+        @include pc{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 24px;        
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        p {
+            margin: 24px 0 32px 0;
+        }
+        img {
+            margin-right: 12px;
+        }
+        ul li {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+.cal {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    p {
+        font-size: 32px;
+        margin: 0 12px;
+        @include pc{
+            margin: 0 6px;        
+        }
+    }
+    &-btn {
+        width: 136px;
+        height: 50px;
+        color: #FFFFFF;
+        background: $color-primary;
+        font-size: 18px;
+        border-radius: 25px;
+        line-height: 50px;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+}
+
+.subscribe {
+    background: #F5F5F5;
+    padding: 24px;
+    border-radius: 12px;
+    @include pc{
+        width: 49%;
+        padding: 16px 8px;        
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        display: inline;
+        color: $color-primary;
+        font-size: 32px;
+        margin: 0;
+        @include pc{
+            font-size: 28px;        
+        }
+    }
+}
+
+.sub {
+    margin-left: 8px;
+    font-size: 12px;
+    @include pc{
+        margin: 0;        
+    }
+}
+
+.monthly {
+    background: #F5F5F5;
+    padding: 24px;
+    border-radius: 12px;
+    @include pc{
+        width: 46%;
+        padding: 16px 8px;        
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        display: inline;
+        font-size: 32px;
+        margin: 0;
+        @include pc{
+            font-size: 28px;        
+        }
+    }
+}
+
+
+.QA {
+    padding-bottom: 60px;
+    @include pad{
+        padding: 0 16px 60px 16px;        
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 48px;
+        text-align: center;
+        @include pad{
+            font-size: 28px;
+            margin-bottom: 28px;        
+        }
+    }
+    ul li {
+        margin-bottom: 16px;
+    }
+    &-item {
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px $color-gray;
+        padding: 16px 32px;
+        @include pad{
+            padding: 16px 24px;        
+        }
+        p {
+            color: $color-gray;
+            padding-top: 24px;
+            line-height: 2;
+            display: none;
+        }
+    }
+    &-title {
+        justify-content: space-between;
+
+        h3 {
+            font-size: 18px;
+            @include pad{
+                font-size: 16px;        
+            }
+        }
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.active{
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #56C4C5;
+        @include pad{
+        
+        }
+    }
+    .plus {
+        display: none;
+    }
+    .minus {
+        display: block;
+    }
+}
+
+.minus {
+    display: none;
+}
+
+

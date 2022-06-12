@@ -1,0 +1,484 @@
+.wrap {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 768px;
+
+    @include pad {
+        background-image: none;
+    }
+}
+
+.nav-detail {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include pad {
+        border-bottom: 2px solid #FFD153;
+    }
+}
+
+.logo {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    width: 250px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @include pad {
+        height: 24px;
+    }
+}
+
+.banner {
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 88px);
+
+    @include pad {
+        flex-direction: column;
+        justify-content: start;
+        height: calc(100vh - 74px);
+    }
+
+    &-wrap {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 18px;
+        color: $color-primary;
+        font-weight: bold;
+
+        @include pad {
+            font-size: 16px;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 16px;
+
+        @include pad {
+            font-size: 32px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+
+        @include pad {
+            font-size: 16px;
+        }
+    }
+
+    &-img {
+        @include pad {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+    }
+
+    &-img img {
+        width: 532px;
+
+        @include pad {
+            width: 300px;
+        }
+    }
+}
+
+.ball-1 {
+    position: absolute;
+    top: calc(100vh - 268px);
+    width: 138px;
+    height: 360px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg");
+    background-position: right;
+
+    @include pad {
+        top: calc(100vh - 74px);
+        width: 49px;
+        height: 126px;
+        background-size: 126px;
+    }
+}
+
+.social {
+    max-width: 969px;
+    margin-bottom: 100px;
+
+    @include pad {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 48px;
+
+        @include pad {
+            font-size: 28px;
+            margin-bottom: 32px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        margin: 24px 0;
+
+        @include pad {
+            font-size: 18px;
+            margin: 16px 0;
+        }
+    }
+
+    img {
+        height: 90px;
+        margin: 0 auto;
+
+        @include pad {
+            height: 60px;
+        }
+    }
+
+    p {
+        color: $color-gray;
+        text-align: center;
+    }
+
+    &-list {
+        justify-content: space-between;
+
+        @include pad {
+            flex-direction: column;
+        }
+    }
+
+    &-item {
+        min-width: 33%;
+
+        @include pad {
+            margin-bottom: 24px;
+        }
+    }
+
+}
+
+
+.character {
+    margin-bottom: 100px;
+
+    &-wrap {
+        position: relative;
+    }
+
+    @include pad {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        text-align: center;
+
+        @include pad {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 48px;
+
+        @include pad {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &-list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: -16px;
+
+        @include pad {
+            flex-direction: column;
+            margin-right: 0;
+        }
+    }
+
+    &-card {
+        width: calc(100%/4 - 16px);
+        margin-right: 16px;
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px $color-gray;
+        background: #ffffff;
+        z-index: 1;
+
+        @include pad {
+            width: calc(100% - 32px);
+            margin: 0 18px 24px 18px;
+        }
+
+        img {
+            border-radius: 12px 12px 0 0;
+        }
+    }
+
+    h4 {
+        color: $color-primary;
+        font-weight: bold;
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
+
+.ball-2 {
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+    width: 210px;
+    height: 320px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg");
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @include pad {
+        bottom: -10px;
+        width: 88px;
+        height: 135px;
+        background-size: 135px;
+    }
+}
+
+.intro {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    @include pad{
+        flex-direction: column-reverse;
+        margin-bottom: 36px;
+    }
+    &-list {
+        max-width: 507px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: -47px;
+        @include pad{
+            margin-right: 0;        
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+    }
+    &-card {
+        width: calc(100%/2 - 47px);
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px $color-gray;
+        padding: 32px 0 48px 32px;
+        margin-right: 47px;
+        margin-bottom: 28px;
+        @include pad{
+            width: calc(100% - 100px);
+            margin: 0 50px;
+            margin-bottom: 24px;        
+        }
+    }
+    &-icon {
+        width: 86px;
+        height: 86px;
+        border-radius: 43px;
+        box-shadow: 3px 3px 10px $color-gray;
+        padding-top: 15px;
+        img {
+            margin: 0 auto;
+        }        
+    }
+    &-content {
+        margin-left: 24px;
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            @include pad{
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 24px;
+            @include pad{
+                font-size: 16px;
+                text-align: center;       
+            }
+        }
+    }
+    &-btn {
+        width: 136px;
+        height: 50px;
+        color: #ffffff;
+        background: $color-primary;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;
+        font-size: 18px;
+        @include pad{
+            margin: 0 auto;
+            margin-bottom: 24px;        
+        }
+    }
+}
+.feedback{
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 104px;
+        @include pad{
+            font-size: 28px;
+            margin-bottom: 88px;        
+        }
+    }
+    &-list {
+        justify-content: space-between;
+        margin-right: -16px;
+        position: relative;
+        @include pad{
+            flex-direction: column;
+            margin-right: 0;        
+        }
+    }
+    &-card {
+        width: calc(100%/3 - 16px);
+        margin-right: 16px;
+        padding: 48px 32px 24px 32px;
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px $color-gray;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        @include pad{
+            width: 100%;
+            margin: 0 auto;        
+        }
+        p {
+            margin-bottom: 24px;
+        }
+        hr {
+            background-color: $color-gray;
+            height: 2px;
+        }
+    }
+    h3 {
+        font-weight: bold;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    &-star {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-img {
+        position: absolute;
+        top: -50px;
+        left: 32px;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+        }
+    }
+    &-pagination {
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
+
+.stars img {
+    margin-right: 8px;
+}
+
+.gray-dot {
+    width: 10px;
+    height: 10px;
+    background: #DDDDDD;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.ball-3 {
+    position: absolute;
+    top: -110px;
+    left: -90px;
+    width: 150px;
+    height: 150px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 0;
+}
+
+.yellow-bar {
+    width: 16px;
+    height: 10px;
+    background: #FFD153;
+    border-radius: 5px;
+}
+
+.info {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 503px;
+    margin-top: 100px;
+    padding-top: 320px;
+    @include pad{
+        margin-top: 60px;        
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 48px;
+        @include pad{
+            font-size: 24px;
+            margin-bottom: 24px;       
+        }
+    }
+    &-btn {
+        width: 136px;
+        height: 50px;
+        color: #ffffff;
+        background: $color-primary;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;
+        font-size: 18px;
+    }
+}

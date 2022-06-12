@@ -234,7 +234,7 @@ img {
     }
 }
 
-.logo {
+.method-logo {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true");
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@ img {
         padding: 0 16px;
     }
 
-    .logo {
+    .method-logo {
         height: 24px;
     }
 }

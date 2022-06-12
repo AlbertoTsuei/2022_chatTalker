@@ -18,6 +18,8 @@ $(document).ready(function () {
         base = 600;
         standard = 1600;
         e.preventDefault();
+        $(this).addClass('selected');
+        $(this).parents().siblings().find('.people-btn').removeClass('selected');
         const btn = $(this).text();
         if (btn === '10000位'){
             $('.subscribe-num').text(10000);

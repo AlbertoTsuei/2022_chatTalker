@@ -1,0 +1,38 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary , sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.rwd-none{
+    @include pad{
+            display: none;
+    }
+    }
