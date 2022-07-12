@@ -3,7 +3,7 @@
     height: 70px;
     border-radius: 35px;
     color: #ffffff;
-    background: #56C4C5;
+    background: $color-primary;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -12,6 +12,9 @@
     bottom: 50px;
     right: 50px;
     z-index: 500;
+    &:hover{
+        color: #000;
+    }
 }
 
 .nav-btn {
@@ -22,4 +25,7 @@
     text-align: center;
     line-height: 40px;
     border-radius: 20px;
+    &:hover{
+        color: #000;
+    }
 }

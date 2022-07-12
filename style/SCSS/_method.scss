@@ -76,9 +76,9 @@
         background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top right -10px;       
+        background-position: top left -10px;       
     }
-    h2 {
+    h1 {
         font-size: 48px;
         font-weight: bold;
         margin-bottom: 16px;
@@ -89,7 +89,7 @@
 }
 
 .method-main {
-    max-width: 900px;
+    max-width: 95%;
     margin: 0 auto;
     margin-bottom: 100px;
     @include pad{
@@ -151,6 +151,10 @@
     font-size: 18px;
     text-align: center;
     line-height: 50px;
+    &:hover{
+        color: #ffffff;
+        background: $color-primary;      
+    }
     @include pad{
         width: 90px;
         height: 40px;
@@ -168,8 +172,9 @@
 
 .method{
     &-list {
-        max-width: 900px;
+        max-width: 98%; 
         margin-right: -20px;
+        margin: 0 auto;
         justify-content: space-between;
         @include pc{
             flex-direction: column;
@@ -182,7 +187,8 @@
         padding: 10px 20px 32px 20px;
         border-radius: 12px;
         box-shadow: 3px 3px 10px $color-gray;
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
         background: #ffffff;
         @include pc{
             width: 100%;
@@ -228,6 +234,9 @@
         line-height: 50px;
         margin: 0 auto;
         margin-top: 32px;
+        &:hover{
+            color: #000;
+        }
     }
 }
 
@@ -310,6 +319,9 @@
         @include pad{
             padding: 16px 24px;        
         }
+        a{
+            color: #000;
+        }
         p {
             color: $color-gray;
             padding-top: 24px;
@@ -336,7 +348,7 @@
     h3 {
         font-size: 18px;
         font-weight: bold;
-        color: #56C4C5;
+        color: $color-primary;
         @include pad{
         
         }

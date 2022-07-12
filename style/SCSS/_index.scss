@@ -10,6 +10,15 @@
     }
 }
 
+.nav-container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+    @include pad{
+        padding: 0;        
+    }
+}
+
 .nav-detail {
     align-items: center;
     justify-content: space-between;
@@ -17,6 +26,7 @@
 
     @include pad {
         border-bottom: 2px solid #FFD153;
+        padding: 0 16px;       
     }
 }
 
@@ -106,7 +116,7 @@
     height: 360px;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg");
     background-position: right;
-
+    z-index: -1;
     @include pad {
         top: calc(100vh - 74px);
         width: 49px;
@@ -116,7 +126,8 @@
 }
 
 .social {
-    max-width: 969px;
+    max-width: 88%;
+    margin: 0 auto;
     margin-bottom: 100px;
 
     @include pad {
@@ -281,7 +292,7 @@
         margin-bottom: 36px;
     }
     &-list {
-        max-width: 507px;
+        max-width: 55%;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-right: -47px;
@@ -298,7 +309,7 @@
         width: calc(100%/2 - 47px);
         border-radius: 12px;
         box-shadow: 3px 3px 10px $color-gray;
-        padding: 32px 0 48px 32px;
+        padding: 32px 8px 48px 32px;
         margin-right: 47px;
         margin-bottom: 28px;
         @include pad{
@@ -314,6 +325,8 @@
         box-shadow: 3px 3px 10px $color-gray;
         padding-top: 15px;
         img {
+            width: 52px;
+            height: 52px;
             margin: 0 auto;
         }        
     }
@@ -328,7 +341,7 @@
                 text-align: center;
             }
         }
-        h3 {
+        p {
             font-size: 18px;
             margin-bottom: 24px;
             @include pad{
@@ -345,10 +358,13 @@
         text-align: center;
         line-height: 50px;
         border-radius: 25px;
-        font-size: 18px;
+        font-size: 18px;        
         @include pad{
             margin: 0 auto;
             margin-bottom: 24px;        
+        }
+        &:hover{
+            color: #000;
         }
     }
 }
@@ -480,5 +496,8 @@
         line-height: 50px;
         border-radius: 25px;
         font-size: 18px;
+        &:hover{
+            color: #000;
+        }
     }
 }

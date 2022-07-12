@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+.d-flex {
+  display: flex;
+}
+
 *,
 *::before,
 *::after {
@@ -153,16 +157,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 16px;
 }
 
 @media (max-width: 768px) {
@@ -186,6 +180,9 @@ img {
   right: 50px;
   z-index: 500;
 }
+.btn-top:hover {
+  color: #000;
+}
 
 .nav-btn {
   width: 128px;
@@ -195,6 +192,15 @@ img {
   text-align: center;
   line-height: 40px;
   border-radius: 20px;
+}
+.nav-btn:hover {
+  color: #000;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .footer {
@@ -216,6 +222,17 @@ img {
   }
 }
 
+.nav-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0;
+  }
+}
+
 .nav-detail {
   align-items: center;
   justify-content: space-between;
@@ -224,6 +241,7 @@ img {
 @media (max-width: 768px) {
   .nav-detail {
     border-bottom: 2px solid #FFD153;
+    padding: 0 16px;
   }
 }
 
@@ -313,6 +331,7 @@ img {
   height: 360px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg");
   background-position: right;
+  z-index: -1;
 }
 @media (max-width: 768px) {
   .ball-1 {
@@ -324,7 +343,8 @@ img {
 }
 
 .social {
-  max-width: 969px;
+  max-width: 88%;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 @media (max-width: 768px) {
@@ -488,7 +508,7 @@ img {
   }
 }
 .intro-list {
-  max-width: 507px;
+  max-width: 55%;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-right: -47px;
@@ -507,7 +527,7 @@ img {
   width: calc(50% - 47px);
   border-radius: 12px;
   box-shadow: 3px 3px 10px #747474;
-  padding: 32px 0 48px 32px;
+  padding: 32px 8px 48px 32px;
   margin-right: 47px;
   margin-bottom: 28px;
 }
@@ -526,6 +546,8 @@ img {
   padding-top: 15px;
 }
 .intro-icon img {
+  width: 52px;
+  height: 52px;
   margin: 0 auto;
 }
 .intro-content {
@@ -542,12 +564,12 @@ img {
     text-align: center;
   }
 }
-.intro-content h3 {
+.intro-content p {
   font-size: 18px;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
-  .intro-content h3 {
+  .intro-content p {
     font-size: 16px;
     text-align: center;
   }
@@ -567,6 +589,9 @@ img {
     margin: 0 auto;
     margin-bottom: 24px;
   }
+}
+.intro-btn:hover {
+  color: #000;
 }
 
 .feedback h2 {
@@ -707,6 +732,9 @@ img {
   border-radius: 25px;
   font-size: 18px;
 }
+.info-btn:hover {
+  color: #000;
+}
 
 .method-wrap {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
@@ -796,22 +824,22 @@ img {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right -10px;
+    background-position: top left -10px;
   }
 }
-.method-banner h2 {
+.method-banner h1 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 @media (max-width: 768px) {
-  .method-banner h2 {
+  .method-banner h1 {
     font-size: 32px;
   }
 }
 
 .method-main {
-  max-width: 900px;
+  max-width: 95%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -880,6 +908,10 @@ img {
   text-align: center;
   line-height: 50px;
 }
+.people-btn:hover {
+  color: #ffffff;
+  background: #56C4C5;
+}
 @media (max-width: 768px) {
   .people-btn {
     width: 90px;
@@ -897,8 +929,9 @@ img {
 }
 
 .method-list {
-  max-width: 900px;
+  max-width: 98%;
   margin-right: -20px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 @media (max-width: 992px) {
@@ -913,7 +946,8 @@ img {
   padding: 10px 20px 32px 20px;
   border-radius: 12px;
   box-shadow: 3px 3px 10px #747474;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   background: #ffffff;
 }
 @media (max-width: 992px) {
@@ -962,6 +996,9 @@ img {
   line-height: 50px;
   margin: 0 auto;
   margin-top: 32px;
+}
+.cal-btn:hover {
+  color: #000;
 }
 
 .subscribe {
@@ -1059,6 +1096,9 @@ img {
   .QA-item {
     padding: 16px 24px;
   }
+}
+.QA-item a {
+  color: #000;
 }
 .QA-item p {
   color: #747474;
